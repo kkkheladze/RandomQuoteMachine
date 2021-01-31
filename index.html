@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RandomQuoteMachinge</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body onload="loadText()" id="body">
+    <div id="quote-box" class="container">
+      <div id="text">
+        <i class="icon-quote-right"></i>
+        <div id="texts"></div>
+      </div>
+      <div id="author"></div>
+      <button
+        class="btn float-right buttons"
+        id="new-quote"
+        onClick="loadText()"
+      >
+        New Quote
+      </button>
+      <button class="btn buttons" id="tweet-quotes">
+        <a
+          href="https://twitter.com/intent/tweet"
+          target="_blank"
+          id="tweet-quote"
+          ><i class="icon-twitter icon-light"></i
+        ></a>
+      </button>
+    </div>
+  </body>
+
+  <footer>
+    <p>By GuJa</p>
+  </footer>
+  <!-- partial -->
+  <script src="./script.js"></script>
+</html>
